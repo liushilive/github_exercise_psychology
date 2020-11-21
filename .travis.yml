@@ -17,10 +17,10 @@ after_success:
   - git init
   - git add .
   - git commit -m "Updated By Travis-CI With Build ${TRAVIS_BUILD_NUMBER} For Github Pages"
-  - git push --force "https://liushilive:${travis_ci_password_gitee}@gitee.com/liushilive/${REF}.git" main:main
+  - git push --force "https://liushilive:${travis_ci_password_gitee}@gitee.com/liushilive/${REF}.git" master:main
 branches:
   only:
-    - main
+    - master
 env:
   global:
     - REF=github_exercise_psychology
